@@ -25,6 +25,7 @@ handler = WebhookHandler('028d41a891d0e0e2beaa764bfbf20c20')
 def callback():
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
+    print(signature,"--------------------------------------------------------------")
     # get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
