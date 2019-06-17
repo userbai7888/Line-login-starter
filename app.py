@@ -1,10 +1,10 @@
 from flask import Flask, request, abort
 
-from linebot import LineBotApi, Web,hookHandler
+#from linebot import LineBotApi, Web,hookHandler
 
-from linebot.exceptions import InvalidSignatureError
+#from linebot.exceptions import InvalidSignatureError
 
-from linebot.models import *
+#from linebot.models import *
 
 
 #======這裡是呼叫的檔案內容=====
