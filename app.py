@@ -1,11 +1,11 @@
 from flask import Flask, request, abort
-
-from linebot import LineBotApi, WebhookHandler
-
-from linebot.exceptions import InvalidSignatureError
-
+from linebot import (
+    LineBotApi, WebhookHandler
+)
+from linebot.exceptions import (
+    InvalidSignatureError
+)
 from linebot.models import *
-
 
 #======這裡是呼叫的檔案內容=====
 from message import *
@@ -25,7 +25,6 @@ handler = WebhookHandler('028d41a891d0e0e2beaa764bfbf20c20')
 def callback():
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
-    print(signature,"--------------------------------------------------------------")
     # get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
@@ -62,8 +61,9 @@ def handle_message(event):
         message = TextSendMessage(text=msg)
         line_bot_api.reply_message(event.reply_token, message)
 
-
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
+
+
