@@ -22,7 +22,7 @@ def function_list():
                     text='百萬種商品一站購足',
                     actions=[
                         MessageTemplateAction(
-                            label='關於Maso百貨',
+                            label='關於White百貨',
                             text='Maso萬事屋百貨是什麼呢？'
                         ),
                         URITemplateAction(
