@@ -81,7 +81,6 @@ def buttons_message():
 
 #TemplateSendMessage - ConfirmTemplate(確認介面訊息)
 def Confirm_Template():
-
     message = TemplateSendMessage(
         alt_text='是否註冊成為會員？',
         template=ConfirmTemplate(
@@ -102,7 +101,6 @@ def Confirm_Template():
     return message
 
 #旋轉木馬按鈕訊息介面
-
 def Carousel_Template():
     message = TemplateSendMessage(
         alt_text='一則旋轉木馬按鈕訊息',

@@ -18,7 +18,7 @@ def function_list():
             columns=[
                 CarouselColumn(
                     thumbnail_image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkl5qgGtBxZbBu921rynn7HN7C7JaD_Hbi5cMMV5gEgQu2mE-rIw',
-                    title='Maso萬事屋百貨',
+                    title='White萬事屋百貨',
                     text='百萬種商品一站購足',
                     actions=[
                         MessageTemplateAction(
@@ -153,12 +153,12 @@ def function_list():
                 ),
                 CarouselColumn(
                     thumbnail_image_url='https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-1/p320x320/50934385_2553136691368417_7766092240367124480_n.jpg?_nc_cat=109&_nc_ht=scontent-sjc3-1.xx&oh=c144a6b45450781ccaf258beb40bc53e&oe=5D228BF1',
-                    title='聯繫Maso本人',
-                    text='直接聯繫Maso',
+                    title='聯繫White本人',
+                    text='直接聯繫White',
                     actions=[
                         MessageTemplateAction(
-                            label='誰是Maso?',
-                            text='Maso是誰？想認識'
+                            label='誰是White?',
+                            text='White是誰？想認識'
                         ),
                         URITemplateAction(
                             label='加我的LINE',
