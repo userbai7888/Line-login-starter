@@ -26,7 +26,7 @@ def callback():
     print("你好，白先生！！！！")
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
-    print(signature)
+    #print(signature)
     # get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
@@ -45,6 +45,7 @@ def handle_message(event):
     print(msg,"-"*100)
     if '你好' in msg:
         message = imagemap_message()
+        print(message)
         line_bot_api.reply_message(event.reply_token, message)
     elif '最新活動訊息' in msg:
         message = buttons_message()
