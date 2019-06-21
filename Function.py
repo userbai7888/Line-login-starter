@@ -23,11 +23,11 @@ def function_list():
                     actions=[
                         MessageTemplateAction(
                             label='關於White百貨',
-                            text='Maso萬事屋百貨是什麼呢？'
+                            text='White萬事屋百貨是什麼呢？'
                         ),
                         URITemplateAction(
                             label='點我逛百貨',
-                            uri='https://tw.shop.com/maso0310'
+                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -57,7 +57,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='購買獨家品牌',
-                            uri='https://tw.shop.com/info/our-brands'
+                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -72,7 +72,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='近期優惠資訊',
-                            uri='https://tw.shop.com/hot-deals'
+                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -87,7 +87,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='活動資訊頁面',
-                            uri='https://tw.shop.com/hot-deals'
+                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -117,7 +117,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='查詢夥伴商店',
-                            uri='https://tw.shop.com/stores-a-z'
+                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -132,7 +132,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='招商說明報名頁面',
-                            uri='https://tw.shop.com/ps_recruit_intro-v.xhtml?tkr=180530162209'
+                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
