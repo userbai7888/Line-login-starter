@@ -1,3 +1,4 @@
+#-
 from flask import Flask, request, abort
 from linebot import (
     LineBotApi, WebhookHandler
@@ -35,7 +36,7 @@ def callback():
     try:
         handler.handle(body, signature)
     except InvalidSignatureError:
-        print("Eroor")
+        print("---------ERROR---------")
         abort(400)
     return 'OK'
 
@@ -45,28 +46,31 @@ def handle_message(event):
     print(event)
     msg = event.message.text
     print(msg,"-"*100)
-    if '你好' in msg:
-        message = imagemap_message()
-        print(message)
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '最新活動訊息' in msg:
-        message = buttons_message()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '註冊會員' in msg:
-        message = Confirm_Template()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '旋轉木馬' in msg:
-        message = Carousel_Template()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '圖片畫廊' in msg:
-        message = test()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '功能列表' in msg:
-        message = function_list()
-        line_bot_api.reply_message(event.reply_token, message)
-    else:
-        message = TextSendMessage(text=msg)
-        line_bot_api.reply_message(event.reply_token, message)
+    try:
+        if '你好' in msg:
+            message = imagemap_message()
+            #print(message)
+            line_bot_api.reply_message(event.reply_token, message)
+        elif '最新活動訊息' in msg:
+            message = buttons_message()
+            line_bot_api.reply_message(event.reply_token, message)
+        elif '註冊會員' in msg:
+            message = Confirm_Template()
+            line_bot_api.reply_message(event.reply_token, message)
+        elif '旋轉木馬' in msg:
+            message = Carousel_Template()
+            line_bot_api.reply_message(event.reply_token, message)
+        elif '圖片畫廊' in msg:
+            message = test()
+            line_bot_api.reply_message(event.reply_token, message)
+        elif '功能列表' in msg:
+            message = function_list()
+            line_bot_api.reply_message(event.reply_token, message)
+        else:
+            message = TextSendMessage(text=msg)
+            line_bot_api.reply_message(event.reply_token, message)
+    except Exception as e:
+        print(e)
 
 import os
 if __name__ == "__main__":
