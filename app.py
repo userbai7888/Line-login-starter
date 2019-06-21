@@ -1,4 +1,3 @@
-#-
 from flask import Flask, request, abort
 import traceback
 from linebot import (
@@ -8,15 +7,14 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import *
-
 #======這裡是呼叫的檔案內容=====
 from message import *
 from new import *
 from Function import *
 #======這裡是呼叫的檔案內容=====
+#----------------------------import------------------------------------
 
 app = Flask(__name__)
-
 # Channel Access Token
 line_bot_api = LineBotApi('J25/NaQfM/brcEm//lmChZoeTvU8h3QkCNMBYsFKwAVNb2cS+ZfmOF6/k7uTShdcpNRRbPQ3oN6WxSW0zNS8Bja8uA9+fNSUgQ9/5yi065sLRDRrQINV/Xkj8vH5NgqsLRGBdlX6WjVGL9DS7pCn5wdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
@@ -25,7 +23,6 @@ handler = WebhookHandler('028d41a891d0e0e2beaa764bfbf20c20')
 # 监听所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
-    print("你好，白先生！！！！")
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
     # get request body as text
@@ -44,7 +41,8 @@ def callback():
 def handle_message(event):
     msg = event.message.text.encode('utf-8').decode('utf-8')
     try:
-        if '合作商' in msg:
+        if msg in "我想购物":
+        #if '合作商' in msg:
             message = imagemap_message()
             line_bot_api.reply_message(event.reply_token, message)
         elif '最新消息' in msg:
