@@ -6,13 +6,13 @@ from linebot.models import *
 #ImagemapSendMessage(組圖訊息)
 def imagemap_message():
     message = ImagemapSendMessage(
-        base_url="https://i.imgur.com/BfTFVDN.jpg",
-        alt_text='最新的合作廠商有誰呢？',
+        base_url="http://cdn.shopify.com/s/files/1/2395/3963/products/23ebb023-1eed-44c4-a9bc-19200d26483f_650x650.jpg?v=1561023841",
+        alt_text='漂亮的包包',
         base_size=BaseSize(height=2000, width=2000),
         actions=[
             URIImagemapAction(
-                #家樂福
-                link_uri="https://tw.shop.com/search/%E5%AE%B6%E6%A8%82%E7%A6%8F",
+                #fashionlina 站点
+                link_uri="http://th.fashionlina.com/m/product_561023562565197.html",
                 area=ImagemapArea(
                     x=0, y=0, width=1000, height=1000
                 )
