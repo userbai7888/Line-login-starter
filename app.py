@@ -18,7 +18,7 @@ from Function import *
 app = Flask(__name__)
 
 # Channel Access Token
-line_bot_api = LineBotApi('LzLBHYa0PSecqYXOmYrhXsed0k0e1Eh6fHYUBVsCw29MeM3/c18YyPZqHPlXFIRYpNRRbPQ3oN6WxSW0zNS8​​Bja8uA9+fNSUgQ9/5yi065udOSXyml9lUaUPzVlUd3dsqvOgv6Yf7wGFPyzUxcdxwAdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('J25/NaQfM/brcEm//lmChZoeTvU8h3QkCNMBYsFKwAVNb2cS+ZfmOF6/k7uTShdcpNRRbPQ3oN6WxSW0zNS8Bja8uA9+fNSUgQ9/5yi065sLRDRrQINV/Xkj8vH5NgqsLRGBdlX6WjVGL9DS7pCn5wdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
 handler = WebhookHandler('028d41a891d0e0e2beaa764bfbf20c20')
 
@@ -50,7 +50,7 @@ def handle_message(event):
     try:
         if '你好' in msg:
             message = imagemap_message()
-            print(message)
+            #print(message)
             line_bot_api.reply_message(event.reply_token, message)
         elif '最新活動訊息' in msg:
             message = buttons_message()
