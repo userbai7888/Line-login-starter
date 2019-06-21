@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="21c7791e-8b67-4bee-8225-7cf9f3f166b3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +17,44 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="83">
+              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#1339#1429#0" />
+                <element signature="e#1638#1729#0" />
+                <element signature="e#1586#1678#0" />
+                <element signature="e#1711#1790#0" />
+                <element signature="e#1823#1911#0" />
+                <element signature="e#1930#2028#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="send_messages.py" pinned="false" current-in-tab="false">
+        <entry file="file://F:/1688程序文件/1688,taobao商铺代码/taobao_shop/venv/Lib/site-packages/linebot/models/send_messages.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-117">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
+        <entry file="file://F:/1688程序文件/1688,taobao商铺代码/taobao_shop/venv/Lib/site-packages/linebot/api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webhook.py" pinned="false" current-in-tab="false">
+        <entry file="file://F:/1688程序文件/1688,taobao商铺代码/taobao_shop/venv/Lib/site-packages/linebot/webhook.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-404">
+              <caret line="207" column="12" selection-start-line="207" selection-start-column="12" selection-end-line="207" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -25,11 +62,10 @@
       <file leaf-file-name="message.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/message.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
+            <state relative-caret-position="154">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding>
                 <element signature="e#34#82#0" expanded="true" />
-                <element signature="e#223#1770#0" />
                 <element signature="e#1847#2800#0" />
                 <element signature="e#2877#3361#0" />
                 <element signature="e#3404#6472#0" />
@@ -42,7 +78,7 @@
       <file leaf-file-name="Function.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="235">
               <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
               <folding>
                 <element signature="e#74#122#0" expanded="true" />
@@ -54,10 +90,11 @@
       <file leaf-file-name="new.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="110">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding>
                 <element signature="e#34#82#0" expanded="true" />
+                <element signature="e#184#1627#0" />
               </folding>
             </state>
           </provider>
@@ -68,6 +105,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>imagemap_message</find>
+      <find>latin-1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,7 +203,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-39" y="0" width="1280" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010101" side_tool="true" weight="0.29515418" />
@@ -173,8 +212,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4989899" visible="true" weight="0.6145374" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14180328" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4989899" visible="true" weight="0.41003272" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09221748" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -206,6 +245,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
           <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#1339#1429#0" />
+            <element signature="e#1638#1729#0" />
+            <element signature="e#1586#1678#0" />
+            <element signature="e#1711#1790#0" />
+            <element signature="e#1823#1911#0" />
+            <element signature="e#1930#2028#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -215,7 +263,6 @@
           <caret line="209" column="16" selection-start-line="209" selection-start-column="16" selection-end-line="209" selection-end-column="16" />
           <folding>
             <element signature="e#34#82#0" expanded="true" />
-            <element signature="e#223#1770#0" />
             <element signature="e#1847#2800#0" />
             <element signature="e#2877#3361#0" />
             <element signature="e#3404#6472#0" />
@@ -240,6 +287,7 @@
           <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="e#34#82#0" expanded="true" />
+            <element signature="e#184#1627#0" />
           </folding>
         </state>
       </provider>
@@ -248,6 +296,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#1339#1429#0" />
+            <element signature="e#1638#1729#0" />
+            <element signature="e#1586#1678#0" />
+            <element signature="e#1711#1790#0" />
+            <element signature="e#1823#1911#0" />
+            <element signature="e#1930#2028#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -257,7 +314,6 @@
           <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#34#82#0" expanded="true" />
-            <element signature="e#223#1770#0" />
             <element signature="e#1847#2800#0" />
             <element signature="e#2877#3361#0" />
             <element signature="e#3404#6472#0" />
@@ -282,6 +338,7 @@
           <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding>
             <element signature="e#34#82#0" expanded="true" />
+            <element signature="e#184#1627#0" />
           </folding>
         </state>
       </provider>
@@ -292,19 +349,9 @@
     <entry file="file://F:/line-bot-sdk-python-master/tests/test_webhook.py" />
     <entry file="file://F:/line-bot-sdk-python-master/examples/flask-echo/app_with_handler.py" />
     <entry file="file://F:/line-bot-sdk-python-master/examples/flask-echo/app.py" />
-    <entry file="file://$PROJECT_DIR$/new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#34#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="235">
           <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
           <folding>
             <element signature="e#74#122#0" expanded="true" />
@@ -312,20 +359,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/1688程序文件/1688,taobao商铺代码/taobao_shop/venv/Lib/site-packages/linebot/api.py">
+    <entry file="file://F:/1688程序文件/1688,taobao商铺代码/taobao_shop/venv/Lib/site-packages/linebot/webhook.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="-404">
+          <caret line="207" column="12" selection-start-line="207" selection-start-column="12" selection-end-line="207" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/message.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
+        <state relative-caret-position="154">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding>
             <element signature="e#34#82#0" expanded="true" />
-            <element signature="e#223#1770#0" />
             <element signature="e#1847#2800#0" />
             <element signature="e#2877#3361#0" />
             <element signature="e#3404#6472#0" />
@@ -334,10 +380,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding>
+            <element signature="e#34#82#0" expanded="true" />
+            <element signature="e#184#1627#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/1688程序文件/1688,taobao商铺代码/taobao_shop/venv/Lib/site-packages/linebot/models/send_messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/1688程序文件/1688,taobao商铺代码/taobao_shop/venv/Lib/site-packages/linebot/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="83">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#1339#1429#0" />
+            <element signature="e#1638#1729#0" />
+            <element signature="e#1586#1678#0" />
+            <element signature="e#1711#1790#0" />
+            <element signature="e#1823#1911#0" />
+            <element signature="e#1930#2028#0" />
+          </folding>
         </state>
       </provider>
     </entry>
