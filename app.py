@@ -48,20 +48,20 @@ def handle_message(event):
     msg = event.message.text.encode('utf-8').decode('utf-8')
     print(msg,"-"*100)
     try:
-        if '你好' in msg:
+        if '合作商' in msg:
             message = imagemap_message()
             #print(message)
             line_bot_api.reply_message(event.reply_token, message)
-        elif '最新活動訊息' in msg:
+        elif '最新消息' in msg:
             message = buttons_message()
             line_bot_api.reply_message(event.reply_token, message)
-        elif '註冊會員' in msg:
+        elif '注册会员' in msg:
             message = Confirm_Template()
             line_bot_api.reply_message(event.reply_token, message)
-        elif '旋轉木馬' in msg:
+        elif '旋转木马' in msg:
             message = Carousel_Template()
             line_bot_api.reply_message(event.reply_token, message)
-        elif '圖片畫廊' in msg:
+        elif '图片' in msg:
             message = test()
             line_bot_api.reply_message(event.reply_token, message)
         elif '功能列表' in msg:
