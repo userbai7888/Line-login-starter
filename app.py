@@ -68,7 +68,7 @@ def handle_message(event):
             message = function_list()
             line_bot_api.reply_message(event.reply_token, message)
         else:
-            message = TextSendMessage(text=msg)
+            message = TextSendMessage(text="请输入正确的关键字！如：合作商、最新消息。")
             print(message)
             line_bot_api.reply_message(event.reply_token, message)
     except Exception as e:
