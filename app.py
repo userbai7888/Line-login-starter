@@ -22,7 +22,7 @@ line_bot_api = LineBotApi('J25/NaQfM/brcEm//lmChZoeTvU8h3QkCNMBYsFKwAVNb2cS+ZfmO
 # Channel Secret
 handler = WebhookHandler('028d41a891d0e0e2beaa764bfbf20c20')
 
-# 監聽所有來自 /callback 的 Post Request
+# 监听所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
     print("你好，白先生！！！！")
@@ -39,7 +39,7 @@ def callback():
         abort(400)
     return 'OK'
 
-# 處理訊息
+# 处理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text.encode('utf-8').decode('utf-8')
@@ -63,7 +63,7 @@ def handle_message(event):
         #     message = function_list()
         #     line_bot_api.reply_message(event.reply_token, message)
         else:
-            message = TextSendMessage(text="请输入正确的关键字！如：合作商、最新消息。")
+            message = TextSendMessage(text=msg)
             line_bot_api.reply_message(event.reply_token, message)
     except Exception as e:
         traceback.print_exc()
