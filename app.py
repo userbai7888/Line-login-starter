@@ -44,9 +44,9 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    print(event)
+    #print(event)
     msg = event.message.text.encode('utf-8').decode('utf-8')
-    print(msg,"-"*100)
+    #print(msg,"-"*100)
     try:
         if '合作商' in msg:
             message = imagemap_message()
@@ -69,6 +69,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, message)
         else:
             message = TextSendMessage(text=msg)
+            print(message)
             line_bot_api.reply_message(event.reply_token, message)
     except Exception as e:
         traceback.print_exc()
