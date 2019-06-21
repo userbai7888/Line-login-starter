@@ -6,7 +6,7 @@ from linebot.models import *
 #ImagemapSendMessage(組圖訊息)
 def imagemap_message():
     message = ImagemapSendMessage(
-        base_url="https://cdn.shopify.com/s/files/1/2395/3963/products/23ebb023-1eed-44c4-a9bc-19200d26483f_650x650.jpg?v=1561023841",
+        base_url="https://i.imgur.com/BfTFVDN.jpg",
         alt_text='漂亮的包包',
         base_size=BaseSize(height=2000, width=2000),
         actions=[

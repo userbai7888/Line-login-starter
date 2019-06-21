@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Line-login-starter.iml" filepath="$PROJECT_DIR$/.idea/Line-login-starter.iml" />
       <module fileurl="file://F:/line-bot-sdk-python-master/.idea/line-bot-sdk-python-master.iml" filepath="F:/line-bot-sdk-python-master/.idea/line-bot-sdk-python-master.iml" />
+      <module fileurl="file://F:/linebot-master/.idea/linebot-master.iml" filepath="F:/linebot-master/.idea/linebot-master.iml" />
     </modules>
   </component>
 </project>

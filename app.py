@@ -28,10 +28,8 @@ def callback():
     print("你好，白先生！！！！")
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
-    #print(signature)
     # get request body as text
     body = request.get_data(as_text=True)
-    #print(body)
     app.logger.info("Request body: " + body)
     # handle webhook body
     try:
@@ -44,13 +42,10 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    #print(event)
     msg = event.message.text.encode('utf-8').decode('utf-8')
-    #print(msg,"-"*100)
     try:
         if '合作商' in msg:
             message = imagemap_message()
-            #print(message)
             line_bot_api.reply_message(event.reply_token, message)
         elif '最新消息' in msg:
             message = buttons_message()
@@ -64,12 +59,11 @@ def handle_message(event):
         elif '图片' in msg:
             message = test()
             line_bot_api.reply_message(event.reply_token, message)
-        elif '功能列表' in msg:
-            message = function_list()
-            line_bot_api.reply_message(event.reply_token, message)
+        # elif '功能列表' in msg:
+        #     message = function_list()
+        #     line_bot_api.reply_message(event.reply_token, message)
         else:
             message = TextSendMessage(text="请输入正确的关键字！如：合作商、最新消息。")
-            print(message)
             line_bot_api.reply_message(event.reply_token, message)
     except Exception as e:
         traceback.print_exc()
