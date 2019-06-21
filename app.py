@@ -1,5 +1,6 @@
 #-
 from flask import Flask, request, abort
+import traceback
 from linebot import (
     LineBotApi, WebhookHandler
 )
@@ -70,6 +71,7 @@ def handle_message(event):
             message = TextSendMessage(text=msg)
             line_bot_api.reply_message(event.reply_token, message)
     except Exception as e:
+        traceback.print_exc()
         print(e)
 
 import os
