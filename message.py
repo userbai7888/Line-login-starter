@@ -7,7 +7,7 @@ from linebot.models import *
 def imagemap_message():
     message = ImagemapSendMessage(
         base_url="https://i.imgur.com/BfTFVDN.jpg",
-        alt_text='最新的合作廠商有誰呢？',
+        alt_text='aaaaaaaa',
         base_size=BaseSize(height=2000, width=2000),
         actions=[
             URIImagemapAction(

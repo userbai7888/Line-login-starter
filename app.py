@@ -30,7 +30,7 @@ def callback():
     #print(signature)
     # get request body as text
     body = request.get_data(as_text=True)
-    print(body)
+    #print(body)
     app.logger.info("Request body: " + body)
     # handle webhook body
     try:
@@ -44,7 +44,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     print(event)
-    msg = event.message.text.encode("utf-8").decode("latin1")
+    msg = event.message.text.encode('utf-8').decode('utf-8')
     print(msg,"-"*100)
     try:
         if '你好' in msg:
