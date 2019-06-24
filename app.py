@@ -11,6 +11,7 @@ from linebot.models import *
 from message import *
 from new import *
 from Function import *
+from sushi import *
 #======這裡是呼叫的檔案內容=====
 #----------------------------import------------------------------------
 
@@ -48,18 +49,26 @@ def handle_message(event):
         elif '最新消息' in msg:
             message = buttons_message()
             line_bot_api.reply_message(event.reply_token, message)
-        elif '注册会员' in msg:
-            message = Confirm_Template()
-            line_bot_api.reply_message(event.reply_token, message)
+        # 注册会员
+        # elif '注册会员' in msg:
+        #     message = Confirm_Template()
+        #     line_bot_api.reply_message(event.reply_token, message)
         elif '旋转木马' in msg:
             message = Carousel_Template()
             line_bot_api.reply_message(event.reply_token, message)
+
+
         elif '图片' in msg:
             message = test()
             line_bot_api.reply_message(event.reply_token, message)
         # elif '功能列表' in msg:
         #     message = function_list()
         #     line_bot_api.reply_message(event.reply_token, message)
+        elif "美食" in msg:
+            message = send_sushi()
+            line_bot_api.reply_message(event.reply_token, message)
+
+        
         else:
             message = TextSendMessage(text=msg)
             line_bot_api.reply_message(event.reply_token, message)

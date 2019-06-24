@@ -1,18 +1,17 @@
-#這些是LINE官方開放的套件組合透過import來套用這個檔案上
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 
 def test():
     message = TemplateSendMessage(
-        alt_text='圖片旋轉木馬',
+        alt_text='图片轮播图',
         template=ImageCarouselTemplate(
             columns=[
                 ImageCarouselColumn(
                     image_url="https://i.imgur.com/uKYgfVs.jpg",
                     action=URITemplateAction(
                         label="新鮮水果",
-                        uri="http://img.juimg.com/tuku/yulantu/110709/222-110F91G31375.jpg"
+                        uri="https://www.youtube.com/watch?v=1baqfP7g_Cg&feature=youtu.be"
                     )
                 ),
                 ImageCarouselColumn(
