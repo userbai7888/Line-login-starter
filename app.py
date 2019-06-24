@@ -48,6 +48,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, message)
         elif '最新消息' in msg:
             message = buttons_message()
+            print(message)
             line_bot_api.reply_message(event.reply_token, message)
         # 注册会员
         # elif '注册会员' in msg:
@@ -56,7 +57,6 @@ def handle_message(event):
         elif '旋转木马' in msg:
             message = Carousel_Template()
             line_bot_api.reply_message(event.reply_token, message)
-
 
         elif '图片' in msg:
             message = test()
