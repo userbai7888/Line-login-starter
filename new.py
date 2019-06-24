@@ -15,10 +15,10 @@ def test():
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="http://74.207.249.158/static/2019-03-06/newimg_1688/leftimg/3497182467_2017169081.jpg",
+                    image_url="https://i.imgur.com/QOcAvjt.jpg",
                     action=URITemplateAction(
-                        label="漂亮鞋子",
-                        uri="http://74.207.249.158/static/2019-03-06/newimg_1688/leftimg/3497182467_2017169081.jpg"
+                        label="新鮮蔬菜",
+                        uri="https://cdn.101mediaimage.com/img/file/1410464751urhp5.jpg"
                     )
                 ),
                 ImageCarouselColumn(
