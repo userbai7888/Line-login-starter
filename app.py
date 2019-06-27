@@ -17,7 +17,7 @@ from sushi import *
 
 app = Flask(__name__)
 # Channel Access Token
-line_bot_api = LineBotApi('J25/NaQfM/brcEm//lmChZoeTvU8h3QkCNMBYsFKwAVNb2cS+ZfmOF6/k7uTShdcpNRRbPQ3oN6WxSW0zNS8Bja8uA9+fNSUgQ9/5yi065sLRDRrQINV/Xkj8vH5NgqsLRGBdlX6WjVGL9DS7pCn5wdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('p5M+z5sA0rK7XVnNsC1ctvNjuCqKhpqHpwt1b+h4KAI+JOPRRfTHT9IzcZRmrYykpNRRbPQ3oN6WxSW0zNS8Bja8uA9+fNSUgQ9/5yi065tPuM2brSTXgh/m80h6BUww5W/F1wZm5nfvwmukGZjP3QdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
 handler = WebhookHandler('028d41a891d0e0e2beaa764bfbf20c20')
 
