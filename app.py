@@ -44,10 +44,9 @@ def handle_message(event):
     msg = event.message.text.encode('utf-8').decode('utf-8')
     try:
         if msg in "我想购物":
-        #if '合作商' in msg:
             message = imagemap_message()
             line_bot_api.reply_message(event.reply_token, message)
-        elif '最新消息' in msg:
+        elif msg in '按钮':
             message = buttons_message()
             print(type(message))
             print(message)
@@ -63,16 +62,16 @@ def handle_message(event):
         elif '图片' in msg:
             message = test()
             line_bot_api.reply_message(event.reply_token, message)
-        # elif '功能列表' in msg:
-        #     message = function_list()
-        #     line_bot_api.reply_message(event.reply_token, message)
+        elif '功能列表' in msg:
+            message = function_list()
+            line_bot_api.reply_message(event.reply_token, message)
         elif "美食" in msg:
             message = send_sushi()
             print(type(message))
             print(message)
             line_bot_api.reply_message(event.reply_token, message)
         else:
-            message = TextSendMessage(text=msg)
+            message = TextSendMessage(text="您輸入的有誤，請正確輸入。如：我想購物，產品列表等......")
             line_bot_api.reply_message(event.reply_token, message)
     except Exception as e:
         traceback.print_exc()
