@@ -59,12 +59,24 @@ def handle_message(event):
             message = Carousel_Template()
             line_bot_api.reply_message(event.reply_token, message)
 
-        elif msg in '圖片':
+
+        elif msg in '圖片輪播圖':
             message = test()
             line_bot_api.reply_message(event.reply_token, message)
-        # elif '功能列表' in msg:
-        #     message = function_list()
-        #     line_bot_api.reply_message(event.reply_token, message)
+        elif '功能列表' in msg:
+            message = function_list()
+            line_bot_api.reply_message(event.reply_token, message)
+
+        elif '位置' in msg:
+            message = LocationSendMessage(
+                title='my location',
+                address='Tokyo',
+                latitude=35.65910807942215,
+                longitude=139.70372892916203
+            )
+            line_bot_api.reply_message(event.reply_token, message)
+
+
         # elif "美食" in msg:
         #     message = send_sushi()
         #     print(type(message))
