@@ -46,30 +46,30 @@ def handle_message(event):
         if msg in "我想购物":
             message = imagemap_message()
             line_bot_api.reply_message(event.reply_token, message)
-        elif msg in '按钮':
+        elif msg in '註冊按钮':
             message = buttons_message()
-            print(type(message))
-            print(message)
+            #print(type(message))
+            #print(message)
             line_bot_api.reply_message(event.reply_token, message)
         # 注册会员
         # elif '注册会员' in msg:
         #     message = Confirm_Template()
         #     line_bot_api.reply_message(event.reply_token, message)
-        elif '旋转木马' in msg:
+        elif msg in '旋轉木馬產品':
             message = Carousel_Template()
             line_bot_api.reply_message(event.reply_token, message)
 
-        elif '图片' in msg:
+        elif msg in '圖片':
             message = test()
             line_bot_api.reply_message(event.reply_token, message)
-        elif '功能列表' in msg:
-            message = function_list()
-            line_bot_api.reply_message(event.reply_token, message)
-        elif "美食" in msg:
-            message = send_sushi()
-            print(type(message))
-            print(message)
-            line_bot_api.reply_message(event.reply_token, message)
+        # elif '功能列表' in msg:
+        #     message = function_list()
+        #     line_bot_api.reply_message(event.reply_token, message)
+        # elif "美食" in msg:
+        #     message = send_sushi()
+        #     print(type(message))
+        #     print(message)
+        #     line_bot_api.reply_message(event.reply_token, message)
         else:
             message = TextSendMessage(text="您輸入的有誤，請正確輸入。如：我想購物，產品列表等......")
             line_bot_api.reply_message(event.reply_token, message)

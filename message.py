@@ -7,6 +7,7 @@ from linebot.models import *
 def imagemap_message():
     message = ImagemapSendMessage(
         base_url="https://i.imgur.com/BfTFVDN.jpg",
+        text="是不是想找‘我想購物’",
         alt_text='漂亮的包包',
         base_size=BaseSize(height=2000, width=2000),
         actions=[
@@ -52,6 +53,7 @@ def imagemap_message():
 #TemplateSendMessage - ButtonsTemplate (按鈕介面訊息)
 def buttons_message():
     message = TemplateSendMessage(
+        text="這裡是註冊！",
         alt_text='好消息來囉～',
         template=ButtonsTemplate(
             thumbnail_image_url="https://pic2.zhimg.com/v2-de4b8114e8408d5265503c8b41f59f85_b.jpg",
