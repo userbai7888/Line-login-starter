@@ -6,6 +6,7 @@ from linebot.models import *
 #ImagemapSendMessage(组图信息)
 def imagemap_message():
     message = ImagemapSendMessage(
+        text="這裡是購物商場",
         base_url="https://i.imgur.com/BfTFVDN.jpg",
         alt_text='漂亮的包包',
         base_size=BaseSize(height=2000, width=2000),
@@ -52,6 +53,7 @@ def imagemap_message():
 #TemplateSendMessage - ButtonsTemplate (按鈕介面訊息)
 def buttons_message():
     message = TemplateSendMessage(
+        text="這裡是會員註冊",
         alt_text='好消息來囉～',
         template=ButtonsTemplate(
             thumbnail_image_url="https://pic2.zhimg.com/v2-de4b8114e8408d5265503c8b41f59f85_b.jpg",
@@ -103,6 +105,7 @@ def Confirm_Template():
 #旋轉木馬按鈕訊息介面
 def Carousel_Template():
     message = TemplateSendMessage(
+        text="這裡是產品的展示",
         alt_text='一則旋轉木馬按鈕訊息',
         template=CarouselTemplate(
             columns=[

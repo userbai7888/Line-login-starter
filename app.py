@@ -43,7 +43,7 @@ def callback():
 def handle_message(event):
     msg = event.message.text.encode('utf-8').decode('utf-8')
     try:
-        if msg in "我想购物":
+        if msg in "我想購物":
             message = imagemap_message()
             line_bot_api.reply_message(event.reply_token, message)
         elif msg in '註冊按钮':
