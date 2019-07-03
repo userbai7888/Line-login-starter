@@ -57,26 +57,16 @@ def handle_message(event):
         #     line_bot_api.reply_message(event.reply_token, message)
         elif msg in '旋轉木馬最新產品':
             message = Carousel_Template()
+            print(message)
             line_bot_api.reply_message(event.reply_token, message)
 
-
-        elif msg in '圖片輪播圖':
-            message = test()
-            line_bot_api.reply_message(event.reply_token, message)
+        # elif msg in '圖片輪播圖':
+        #     message = test()
+        #     line_bot_api.reply_message(event.reply_token, message)
         elif msg in '功能簡介':
             message = function_list()
             print(message)
             line_bot_api.reply_message(event.reply_token, message)
-
-        # elif '位置' in msg:
-        #     message = LocationSendMessage(
-        #         title='my location',
-        #         address='Tokyo',
-        #         latitude=35.65910807942215,
-        #         longitude=139.70372892916203
-        #     )
-        #     line_bot_api.reply_message(event.reply_token, message)
-
 
         # elif "美食" in msg:
         #     message = send_sushi()
@@ -89,6 +79,14 @@ def handle_message(event):
             text = 'Dawn 牛皮!!!'
             message = TextSendMessage(text=text)
             line_bot_api.reply_message(event.reply_token, message)
+        elif '女裝圖片' in msg:
+            message = test()
+            line_bot_api.reply_message(event.reply_token, message)
+        elif '男裝圖片' in msg:
+            message = test()
+            line_bot_api.reply_message(event.reply_token, message)
+
+
 
         else:
             message = TextSendMessage(text="您輸入的有誤，請正確輸入。如：我想購物，產品列表等......")
