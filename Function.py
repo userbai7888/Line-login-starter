@@ -32,7 +32,7 @@ def function_list():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://www.youtaker.com/video2015/promo/images/promo-vip.png',
+                    thumbnail_image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkl5qgGtBxZbBu921rynn7HN7C7JaD_Hbi5cMMV5gEgQu2mE-rIw',
                     title='註冊成為會員',
                     text='免費獲得會員好康！',
                     actions=[
@@ -57,7 +57,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='購買獨家品牌',
-                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
+                            uri='https://www.taobao.com'
                         )
                     ]
                 ),
@@ -72,7 +72,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='近期優惠資訊',
-                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
+                            uri='https://www.taobao.com'
                         )
                     ]
                 ),
@@ -87,7 +87,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='活動資訊頁面',
-                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
+                            uri='https://www.taobao.com'
                         )
                     ]
                 ),
