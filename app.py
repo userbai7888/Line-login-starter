@@ -74,10 +74,10 @@ def handle_message(event):
             message = TextSendMessage(text=text)
             line_bot_api.reply_message(event.reply_token, message)
         elif '女裝圖片' in msg:
-            message = test()
+            message = women_test()
             line_bot_api.reply_message(event.reply_token, message)
         elif '男裝圖片' in msg:
-            message = test()
+            message = men_test()
             line_bot_api.reply_message(event.reply_token, message)
 
 

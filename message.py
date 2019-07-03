@@ -110,7 +110,7 @@ def Carousel_Template():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Number_1_in_green_rounded_square.svg/200px-Number_1_in_green_rounded_square.svg.png',
+                    thumbnail_image_url='https://i.imgur.com/Ktiux3g.jpg',
                     title='這是漂亮女裝',
                     text='女裝類',
                     actions=[
