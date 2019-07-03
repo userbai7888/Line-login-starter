@@ -63,7 +63,7 @@ def handle_message(event):
         elif msg in '圖片輪播圖':
             message = test()
             line_bot_api.reply_message(event.reply_token, message)
-        elif msg in '功能':
+        elif msg in '功能簡介':
             message = function_list()
             print(message)
             line_bot_api.reply_message(event.reply_token, message)
