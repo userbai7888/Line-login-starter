@@ -68,12 +68,6 @@ def handle_message(event):
             print(message)
             line_bot_api.reply_message(event.reply_token, message)
 
-        # elif "美食" in msg:
-        #     message = send_sushi()
-        #     print(type(message))
-        #     print(message)
-        #     line_bot_api.reply_message(event.reply_token, message)
-
         #判定圖文選擇的文字輸入
         elif 'Dawn商城是什麼呢?' in msg:
             text = 'Dawn 牛皮!!!'
