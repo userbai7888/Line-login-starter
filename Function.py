@@ -27,7 +27,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='點我逛百貨',
-                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
+                            uri='http://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -42,7 +42,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='點我註冊會員',
-                            uri='https://tw.shop.com/nbts/create-myaccount.xhtml?returnurl=https%3A%2F%2Ftw.shop.com%2F'
+                            uri='http://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -57,7 +57,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='購買獨家品牌',
-                            uri='https://www.taobao.com'
+                            uri='http://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -72,7 +72,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='近期優惠資訊',
-                            uri='https://www.taobao.com'
+                            uri='http://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -87,7 +87,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='活動資訊頁面',
-                            uri='https://www.taobao.com'
+                            uri='http://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -117,7 +117,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='查詢夥伴商店',
-                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
+                            uri='http://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
@@ -132,7 +132,7 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='招商說明報名頁面',
-                            uri='https://th.fashionlina.com/m/product_561023562565197.html'
+                            uri='https://www.taobao.com'
                         )
                     ]
                 ),
