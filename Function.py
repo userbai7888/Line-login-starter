@@ -31,21 +31,7 @@ def function_list():
                         )
                     ]
                 ),
-                CarouselColumn(
-                    thumbnail_image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkl5qgGtBxZbBu921rynn7HN7C7JaD_Hbi5cMMV5gEgQu2mE-rIw',
-                    title='註冊成為會員',
-                    text='免費獲得會員好康！',
-                    actions=[
-                        MessageTemplateAction(
-                            label='會員優惠資訊',
-                            text='我想瞭解註冊會員的好處是什麼'
-                        ),
-                        URITemplateAction(
-                            label='點我註冊會員',
-                            uri='http://th.fashionlina.com/m/product_561023562565197.html'
-                        )
-                    ]
-                ),
+
                 CarouselColumn(
                     thumbnail_image_url='https://img.shop.com/Image/Images/11module/MABrands/opc3Chews_usa_32979_LogoTreatment_200x75.svg',
                     title='獨家商品',
@@ -106,21 +92,7 @@ def function_list():
                         )
                     ]
                 ),
-                CarouselColumn(
-                    thumbnail_image_url='https://www.wecooperation.com/makemoney/%E7%9F%A5%E5%90%8D%E5%A4%A5%E4%BC%B4%E5%95%86%E5%BA%97.png',
-                    title='好店分享',
-                    text='優質商品介紹與分享',
-                    actions=[
-                        MessageTemplateAction(
-                            label='夥伴商店推薦',
-                            text='抽一家夥伴商店'
-                        ),
-                        URITemplateAction(
-                            label='查詢夥伴商店',
-                            uri='http://th.fashionlina.com/m/product_561023562565197.html'
-                        )
-                    ]
-                ),
+               
                 CarouselColumn(
                     thumbnail_image_url='https://img.shop.com/Image/Images/landingPages/ps-recruit/twn-ps-recruit-header.jpg',
                     title='招商說明',
