@@ -112,15 +112,15 @@ def Carousel_Template():
                 CarouselColumn(
                     thumbnail_image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Number_1_in_green_rounded_square.svg/200px-Number_1_in_green_rounded_square.svg.png',
                     title='這是漂亮女裝',
-                    text='一個模板可以有三個按鈕',
+                    text='女裝類',
                     actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='將這個訊息偷偷回傳給機器人'
-                        ),
+                        # PostbackTemplateAction(
+                        #     label='回傳一個訊息',
+                        #     data='將這個訊息偷偷回傳給機器人'
+                        # ),
                         MessageTemplateAction(
                             label='我想看女裝',
-                            text='女裝'
+                            text='女裝圖片'
                         ),
                         URITemplateAction(
                             label='進入女裝的網頁',
@@ -133,13 +133,13 @@ def Carousel_Template():
                     title='這是男裝',
                     text='副標題可以自己改',
                     actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='這是ID=2'
-                        ),
+                        # PostbackTemplateAction(
+                        #     label='回傳一個訊息',
+                        #     data='這是ID=2'
+                        # ),
                         MessageTemplateAction(
                             label='我想看男裝',
-                            text='男裝'
+                            text='男裝圖片'
                         ),
                         URITemplateAction(
                             label='進入男裝的網頁',
