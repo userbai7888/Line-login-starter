@@ -85,8 +85,8 @@ def handle_message(event):
         #     line_bot_api.reply_message(event.reply_token, message)
 
         #判定圖文選擇的文字輸入
-        elif '關於Dawn商城' in msg:
-            text = 'Dawn 牛皮'
+        elif 'Dawn商城是什麼呢?' in msg:
+            text = 'Dawn 牛皮!!!'
             message = TextSendMessage(text=text)
             line_bot_api.reply_message(event.reply_token, message)
 

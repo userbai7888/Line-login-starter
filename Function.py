@@ -23,7 +23,7 @@ def function_list():
                     actions=[
                         MessageTemplateAction(
                             label='關於Dawn商城',
-                            text='Dawn商城是什麼呢？'
+                            text='Dawn商城是什麼呢?'
                         ),
                         URITemplateAction(
                             label='點我逛商場',
