@@ -32,21 +32,21 @@ def function_list():
                     ]
                 ),
 
-                # CarouselColumn(
-                #     thumbnail_image_url='https://img.shop.com/Image/Images/11module/MABrands/opc3Chews_usa_32979_LogoTreatment_200x75.svg',
-                #     title='獨家商品',
-                #     text='百種優質獨家商品',
-                #     actions=[
-                #         MessageTemplateAction(
-                #             label='點我看產品目錄',
-                #             text='獨家商品有哪些？'
-                #         ),
-                #         URITemplateAction(
-                #             label='購買獨家品牌',
-                #             uri='http://th.fashionlina.com/m/product_561023562565197.html'
-                #         )
-                #     ]
-                # ),
+                CarouselColumn(
+                    thumbnail_image_url='https://img.shop.com/Image/Images/11module/MABrands/opc3Chews_usa_32979_LogoTreatment_200x75.svg',
+                    title='獨家商品',
+                    text='百種優質獨家商品',
+                    actions=[
+                        MessageTemplateAction(
+                            label='點我看產品目錄',
+                            text='獨家商品有哪些？'
+                        ),
+                        URITemplateAction(
+                            label='購買獨家品牌',
+                            uri='http://th.fashionlina.com/m/product_561023562565197.html'
+                        )
+                    ]
+                ),
                 # CarouselColumn(
                 #     thumbnail_image_url='https://img.shop.com/Image/featuredhotdeal/GOMAJI1551245496503.jpg',
                 #     title='優惠資訊',
