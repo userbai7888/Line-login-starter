@@ -65,6 +65,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, message)
         elif msg in '功能':
             message = function_list()
+            print(message)
             line_bot_api.reply_message(event.reply_token, message)
 
         # elif '位置' in msg:
