@@ -55,7 +55,7 @@ def handle_message(event):
         # elif '注册会员' in msg:
         #     message = Confirm_Template()
         #     line_bot_api.reply_message(event.reply_token, message)
-        elif msg in '旋轉木馬產品':
+        elif msg in '旋轉木馬最新產品':
             message = Carousel_Template()
             line_bot_api.reply_message(event.reply_token, message)
 
@@ -83,6 +83,13 @@ def handle_message(event):
         #     print(type(message))
         #     print(message)
         #     line_bot_api.reply_message(event.reply_token, message)
+
+        #判定圖文選擇的文字輸入
+        elif '關於Dawn商城' in msg:
+            text = 'Dawn 牛皮'
+            message = TextSendMessage(text=text)
+            line_bot_api.reply_message(event.reply_token, message)
+
         else:
             message = TextSendMessage(text="您輸入的有誤，請正確輸入。如：我想購物，產品列表等......")
             line_bot_api.reply_message(event.reply_token, message)

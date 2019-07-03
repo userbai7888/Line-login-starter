@@ -18,16 +18,16 @@ def function_list():
             columns=[
                 CarouselColumn(
                     thumbnail_image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkl5qgGtBxZbBu921rynn7HN7C7JaD_Hbi5cMMV5gEgQu2mE-rIw',
-                    title='White萬事屋百貨',
-                    text='百萬種商品一站購足',
+                    title='Dawn商城',
+                    text='百萬種商品一站購買',
                     actions=[
                         MessageTemplateAction(
-                            label='關於White百貨',
-                            text='White萬事屋百貨是什麼呢？'
+                            label='關於Dawn商城',
+                            text='Dawn商城是什麼呢？'
                         ),
                         URITemplateAction(
-                            label='點我逛百貨',
-                            uri='http://th.fashionlina.com/m/product_561023562565197.html'
+                            label='點我逛商場',
+                            uri='http://th.fashionlian.com/m/index.html'
                         )
                     ]
                 ),
@@ -43,25 +43,25 @@ def function_list():
                         ),
                         URITemplateAction(
                             label='購買獨家品牌',
+                            uri='http://th.fashionlian.com/m/index.html'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='https://img.shop.com/Image/featuredhotdeal/GOMAJI1551245496503.jpg',
+                    title='優惠資訊',
+                    text='隨時更新最新優惠',
+                    actions=[
+                        MessageTemplateAction(
+                            label='抽一個優惠',
+                            text='抽優惠資訊'
+                        ),
+                        URITemplateAction(
+                            label='近期優惠資訊',
                             uri='http://th.fashionlina.com/m/product_561023562565197.html'
                         )
                     ]
                 ),
-                # CarouselColumn(
-                #     thumbnail_image_url='https://img.shop.com/Image/featuredhotdeal/GOMAJI1551245496503.jpg',
-                #     title='優惠資訊',
-                #     text='隨時更新最新優惠',
-                #     actions=[
-                #         MessageTemplateAction(
-                #             label='抽一個優惠',
-                #             text='抽優惠資訊'
-                #         ),
-                #         URITemplateAction(
-                #             label='近期優惠資訊',
-                #             uri='http://th.fashionlina.com/m/product_561023562565197.html'
-                #         )
-                #     ]
-                # ),
                 # CarouselColumn(
                 #     thumbnail_image_url='https://img.shop.com/Image/featuredhotdeal/Carrefour1551245288925.jpg',
                 #     title='最新消息',
