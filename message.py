@@ -129,13 +129,13 @@ def Carousel_Template():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuo7n2_HNSFuT3T7Z9PUZmn1SDM6G6-iXfRC3FxdGTj7X1Wr0RzA',
+                    thumbnail_image_url='https://i.imgur.com/dXhB0Jx.jpg',
                     title='這是男裝',
-                    text='副標題可以自己改',
+                    text='男裝類',
                     actions=[
                         PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='這是ID=2'
+                            label='back message',
+                            data='what do you do?'
                         ),
                         MessageTemplateAction(
                             label='我想看男裝',

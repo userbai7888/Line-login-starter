@@ -2,9 +2,10 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 
+# 女裝圖片展示
 def women_test():
     message = TemplateSendMessage(
-        alt_text='图片轮播图',
+        alt_text='女式图片轮播图',
         template=ImageCarouselTemplate(
             columns=[
                 ImageCarouselColumn(
@@ -41,41 +42,42 @@ def women_test():
     return message
 
 
-
+# 男裝圖片展示
 def men_test():
     message = TemplateSendMessage(
-        alt_text='图片轮播图',
+        alt_text='男式图片轮播图',
         template=ImageCarouselTemplate(
             columns=[
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/uKYgfVs.jpg",
+                    image_url="https://i.imgur.com/dXhB0Jx.jpg",
                     action=URITemplateAction(
-                        label="新鮮水果",
-                        uri="https://www.youtube.com/watch?v=1baqfP7g_Cg&feature=youtu.be"
+                        label="男式襯衣",
+                        uri="https://i.imgur.com/dXhB0Jx.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/QOcAvjt.jpg",
+                    image_url="https://i.imgur.com/ksFPg8Z.jpg",
                     action=URITemplateAction(
-                        label="新鮮蔬菜",
-                        uri="https://cdn.101mediaimage.com/img/file/1410464751urhp5.jpg"
+                        label="紅格子襯衫",
+                        uri="https://i.imgur.com/ksFPg8Z.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/Np7eFyj.jpg",
+                    image_url="https://i.imgur.com/ubSzfrC.jpg",
                     action=URITemplateAction(
-                        label="可愛狗狗",
-                        uri="http://imgm.cnmo-img.com.cn/appimg/screenpic/big/674/673928.JPG"
+                        label="白格子襯衣",
+                        uri="https://i.imgur.com/ubSzfrC.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/QRIa5Dz.jpg",
+                    image_url="https://i.imgur.com/mVp88gI.jpg",
                     action=URITemplateAction(
-                        label="可愛貓咪",
-                        uri="https://m-miya.net/wp-content/uploads/2014/07/0-065-1.min_.jpg"
+                        label="西裝",
+                        uri="https://i.imgur.com/mVp88gI.jpg"
                     )
                 )
             ]
         )
     )
+
     return message
