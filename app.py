@@ -41,8 +41,10 @@ def callback():
 # 处理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    print(event,"*"*20)
+    print(type(event),"*"*20)
     msg = event.message.text.encode('utf-8').decode('utf-8')
+    user_id = event.source.userId
+    print(msg,user_id)
     try:
         if msg in "我想購物":
             message = imagemap_message()
@@ -84,7 +86,7 @@ def handle_message(event):
 
 
         #向用戶發送消息
-        user_id = event.source.userId
+
         print(user_id,"-"*50)
         line_bot_api.multicast([user_id], TextSendMessage(text='Hello World!'))
 
