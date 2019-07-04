@@ -41,6 +41,7 @@ def callback():
 # 处理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    print(event,"*"*20)
     msg = event.message.text.encode('utf-8').decode('utf-8')
     try:
         if msg in "我想購物":
@@ -60,9 +61,6 @@ def handle_message(event):
             print(message)
             line_bot_api.reply_message(event.reply_token, message)
 
-        # elif msg in '圖片輪播圖':
-        #     message = test()
-        #     line_bot_api.reply_message(event.reply_token, message)
         elif msg in '功能簡介':
             message = function_list()
             print(message)
@@ -70,7 +68,7 @@ def handle_message(event):
 
         #判定圖文選擇的文字輸入
         elif 'Dawn商城是什麼呢?' in msg:
-            text = 'Dawn 牛皮!!!'
+            text = 'Dawn 666!!!'
             message = TextSendMessage(text=text)
             line_bot_api.reply_message(event.reply_token, message)
         elif '女裝圖片' in msg:
@@ -79,6 +77,7 @@ def handle_message(event):
         elif '男裝圖片' in msg:
             message = men_test()
             line_bot_api.reply_message(event.reply_token, message)
+
 
 
 
