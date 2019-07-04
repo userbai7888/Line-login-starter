@@ -1,6 +1,21 @@
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
+from flask import Flask
+app = Flask(__name__)
+from flask_sqlalchemy import SQLAlchemy
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:654f532pk9ptd189k@74.207.249.158/test_ali88_03'
+app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+db = SQLAlchemy(app)
+print(db)
+
+
+
+
+
+
 
 # 女裝圖片展示
 def women_test():

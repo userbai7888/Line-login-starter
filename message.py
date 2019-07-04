@@ -32,13 +32,6 @@ def imagemap_message():
                     x=0, y=1000, width=1000, height=1000
                 )
             ),
-            # URIImagemapAction(
-            #     #塔吉特千層蛋糕
-            #     link_uri="https://tw.shop.com/search/%E5%A1%94%E5%90%89%E7%89%B9",
-            #     area=ImagemapArea(
-            #         x=1000, y=1000, width=1000, height=500
-            #     )
-            # ),
             URIImagemapAction(
                 #亞尼克生乳捲
                 link_uri="https://tw.shop.com/search/%E4%BA%9E%E5%B0%BC%E5%85%8B",
