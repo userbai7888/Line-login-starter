@@ -58,12 +58,12 @@ def handle_message(event):
         #     line_bot_api.reply_message(event.reply_token, message)
         elif msg in '旋轉木馬最新產品':
             message = Carousel_Template()
-            print(message)
+            #print(message)
             line_bot_api.reply_message(event.reply_token, message)
 
         elif msg in '功能簡介':
             message = function_list()
-            print(message)
+            #print(message)
             line_bot_api.reply_message(event.reply_token, message)
 
         #判定圖文選擇的文字輸入
@@ -78,12 +78,16 @@ def handle_message(event):
             message = men_test()
             line_bot_api.reply_message(event.reply_token, message)
 
-
-
-
         else:
             message = TextSendMessage(text="您輸入的有誤，請正確輸入。如：我想購物，產品列表等......")
             line_bot_api.reply_message(event.reply_token, message)
+
+
+        #向用戶發送消息
+        user_id = event.source.userId
+        print(user_id,"-"*50)
+        line_bot_api.multicast([user_id], TextSendMessage(text='Hello World!'))
+
     except Exception as e:
         traceback.print_exc()
         print(e)
