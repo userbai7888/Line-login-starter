@@ -44,7 +44,7 @@ def handle_message(event):
     print(event,"*"*20)
     msg = event.message.text.encode('utf-8').decode('utf-8')
     msg2 = event.message.id
-    user_id = event.source.type
+    user_id = event.source.userId.encode('utf-8').decode('utf-8')
     print(msg2)
     print(user_id,"userID 打印")
     try:
