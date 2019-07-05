@@ -29,6 +29,7 @@ def callback():
     # get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
+    print(body)
     # handle webhook body
     try:
         handler.handle(body, signature)
@@ -41,10 +42,11 @@ def callback():
 # 处理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    print(event,"*"*20)
     msg = event.message.text.encode('utf-8').decode('utf-8')
+    # 向用戶發送消息
     user_id = event.source.user_id
-    #print(msg)
+    line_bot_api.multicast([user_id], TextSendMessage(text='Hello World!'))
+
     # 查看对象属性
     #print(dir(user_id),"userID 打印")
     try:
@@ -54,15 +56,10 @@ def handle_message(event):
         elif msg in '註冊按钮':
             message = buttons_message()
             line_bot_api.reply_message(event.reply_token, message)
-        # 注册会员
-        # elif '注册会员' in msg:
-        #     message = Confirm_Template()
-        #     line_bot_api.reply_message(event.reply_token, message)
         elif msg in '旋轉木馬最新產品':
             message = Carousel_Template()
             #print(message)
             line_bot_api.reply_message(event.reply_token, message)
-
         elif msg in '功能簡介':
             message = function_list()
             #print(message)
@@ -85,10 +82,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, message)
 
 
-        #向用戶發送消息
 
-        print(user_id,"-"*50)
-        line_bot_api.multicast([user_id], TextSendMessage(text='Hello World!'))
+        #print(user_id,"-"*50)
+
 
     except Exception as e:
         traceback.print_exc()

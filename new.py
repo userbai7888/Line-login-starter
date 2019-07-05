@@ -10,7 +10,8 @@ from linebot.models import *
 # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 # db = SQLAlchemy(app)
 # print(db)
-
+# ，
+#
 
 
 
