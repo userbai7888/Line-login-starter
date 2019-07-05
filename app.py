@@ -41,7 +41,7 @@ def callback():
 # 处理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    print(type(event),"*"*20)
+    print(event,"*"*20)
     msg = event.message.text.encode('utf-8').decode('utf-8')
     user_id = event.source.userId
     print(msg,user_id)
@@ -51,8 +51,6 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, message)
         elif msg in '註冊按钮':
             message = buttons_message()
-            #print(type(message))
-            #print(message)
             line_bot_api.reply_message(event.reply_token, message)
         # 注册会员
         # elif '注册会员' in msg:
