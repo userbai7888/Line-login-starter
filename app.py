@@ -29,7 +29,16 @@ def callback():
     # get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
-    print(body,"-"*50)
+    # 向用戶發送消息
+    print(body, "-" * 50)
+    print(type(body))
+    print(body["replyToken"])
+    text = body["replyToken"]
+    line_bot_api.push_message(body["replyToken"], text)
+
+
+    user_id = body.source.user_id
+    line_bot_api.multicast([user_id], TextSendMessage(text='Hello World!'))
     # handle webhook body
     try:
         handler.handle(body, signature)
@@ -43,9 +52,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text.encode('utf-8').decode('utf-8')
-    # 向用戶發送消息
-    user_id = event.source.user_id
-    line_bot_api.multicast([user_id], TextSendMessage(text='Hello World!'))
+
 
     # 查看对象属性
     #print(dir(user_id),"userID 打印")
