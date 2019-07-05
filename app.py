@@ -43,7 +43,7 @@ def callback():
 def handle_message(event):
     print(event,"*"*20)
     msg = event.message.text.encode('utf-8').decode('utf-8')
-    user_id = event.source
+    user_id = event.source.user
     print(msg)
     print(type(user_id))
     try:
