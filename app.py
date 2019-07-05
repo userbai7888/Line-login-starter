@@ -31,14 +31,15 @@ def callback():
     app.logger.info("Request body: " + body)
     # 向用戶發送消息
     print(body, "-" * 50)
-    print(type(body))
-    print(body["replyToken"])
-    text = body["replyToken"]
-    line_bot_api.push_message(body["replyToken"], text)
+    print(dict(body))
+    events = dict(body)
+    print(events['events'][0]['source']['userId'])
+    text = TextSendMessage(text='你好')
+    line_bot_api.push_message(events['events'][0]['source']['userId'], messages=text)
 
 
-    user_id = body.source.user_id
-    line_bot_api.multicast([user_id], TextSendMessage(text='Hello World!'))
+    #user_id = body.source.user_id
+    #line_bot_api.multicast([user_id], TextSendMessage(text='Hello World!'))
     # handle webhook body
     try:
         handler.handle(body, signature)
