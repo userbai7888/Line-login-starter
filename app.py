@@ -45,7 +45,7 @@ def handle_message(event):
     msg = event.message.text.encode('utf-8').decode('utf-8')
     user_id = event.source
     print(msg)
-    print(user_id)
+    print(type(user_id))
     try:
         if msg in "我想購物":
             message = imagemap_message()
