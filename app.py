@@ -43,9 +43,10 @@ def callback():
 def handle_message(event):
     print(event,"*"*20)
     msg = event.message.text.encode('utf-8').decode('utf-8')
-    user_id = event.source
-    print(msg)
-    print(dir(user_id),"userID 打印")
+    user_id = event.source.user_id
+    #print(msg)
+    # 查看对象属性
+    #print(dir(user_id),"userID 打印")
     try:
         if msg in "我想購物":
             message = imagemap_message()
