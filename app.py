@@ -31,7 +31,7 @@ def callback():
     app.logger.info("Request body: " + body)
     # 向用戶發送消息
     print(body, "-"*50)
-    
+    print(type(body))
     print(dict(body))
     events = dict(body)
     print(events['events'][0]['source']['userId'])
