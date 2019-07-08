@@ -31,9 +31,9 @@ def callback():
     app.logger.info("Request body: " + body)
     # 向用戶發送消息
     print(body, "-"*50)
-    print(type(body))
-    print(dict(body))
-    events = dict(body)
+    #print(type(body))
+    print(eval(body))
+    events = eval(body)
     print(events['events'][0]['source']['userId'])
     text = TextSendMessage(text='妳好')
     line_bot_api.push_message(events['events'][0]['source']['userId'], messages=text)
