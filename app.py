@@ -30,13 +30,13 @@ def callback():
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
     # 向用戶發送消息
-    print(body, "-" * 50)
+    print(body, "-"*50)
+    
     print(dict(body))
     events = dict(body)
     print(events['events'][0]['source']['userId'])
-    text = TextSendMessage(text='你好')
+    text = TextSendMessage(text='妳好')
     line_bot_api.push_message(events['events'][0]['source']['userId'], messages=text)
-
 
     #user_id = body.source.user_id
     #line_bot_api.multicast([user_id], TextSendMessage(text='Hello World!'))
